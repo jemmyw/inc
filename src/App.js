@@ -28,7 +28,10 @@ function App() {
           <li>list</li>
           <li>react in web-component in react</li>
           <li>
-            <Button onClick={handleClick} label="App button" />
+            <Button
+              onClick={handleClick}
+              label={appClicked ? "Clicked app button" : "App button"}
+            />
           </li>
           <li>
             <List>

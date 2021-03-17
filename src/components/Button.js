@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { StoreContext } from '../store';
 
 export default function Button({ label, onClick }) {
   const handleClick = (event) => onClick(event);
+  const store = useContext(StoreContext)
 
   return (
     <button
@@ -12,6 +14,7 @@ export default function Button({ label, onClick }) {
       }}
     >
       {label}
+      {store.hello}
     </button>
   );
 }

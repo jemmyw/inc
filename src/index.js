@@ -1,15 +1,18 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ListEl from "./wc/list";
+import { StoreContext } from "./store";
 
 console.log(ListEl);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StoreContext.Provider value={{ hello: "there" }}>
+      <App />
+    </StoreContext.Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
