@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import Button from "./components/Button";
 import List from "./components/List";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
           <li>list</li>
           <li>react in web-component in react</li>
           <li>
-            <button onClick={handleClick}>App button</button>
+            <Button onClick={handleClick} label="App button" />
           </li>
           <li>
             <List>
@@ -38,7 +39,7 @@ function App() {
             <list-el>
               <li>react in webcomponent in react webcomponent in react</li>
               <li>
-                <button onClick={handleClick}>deep app button</button>
+                <Button onClick={handleClick} label="deep app button" />
               </li>
             </list-el>
           </li>

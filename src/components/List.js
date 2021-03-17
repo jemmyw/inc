@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 export default function List({ label, children }) {
   console.log(children);
@@ -11,10 +12,10 @@ export default function List({ label, children }) {
   };
 
   return (
-    <div>
+    <div style={{ border: "1px solid red", margin: "5px", padding: "5px" }}>
       <div>{label}</div>
       <div>
-        <button onClick={handleClick}>List button</button>
+        <Button onClick={handleClick} label="List button" />
       </div>
       <ul>
         {clicked ? <li>list was clicked</li> : null}
