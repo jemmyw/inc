@@ -14,10 +14,10 @@ export default function List({ label, children }) {
     <div>
       <div>{label}</div>
       <div>
-        <button onClick={handleClick}>click me</button>
+        <button onClick={handleClick}>List button</button>
       </div>
       <ul>
-        {clicked ? <li>was clicked</li> : null}
+        {clicked ? <li>list was clicked</li> : null}
         {children}
       </ul>
     </div>

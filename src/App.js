@@ -14,18 +14,23 @@ function App() {
     <div className="App">
       <div>{appClicked ? "I was clicked" : "not clicked"}</div>
 
-      <List>
-        <li>list</li>
-        <li>all react</li>
-      </List>
-
-      <list-el>
-        <li>list</li>
-        <li>react in react</li>
-        <li>
-          <button onClick={handleClick}>App click</button>
-        </li>
-      </list-el>
+      <div>
+        <h2>React component</h2>
+        <List>
+          <li>list</li>
+          <li>only react</li>
+        </List>
+      </div>
+      <div>
+        <h2>React in webcomponent in react</h2>
+        <list-el>
+          <li>list</li>
+          <li>react in web-component in react</li>
+          <li>
+            <button onClick={handleClick}>App button</button>
+          </li>
+        </list-el>
+      </div>
     </div>
   );
 }
