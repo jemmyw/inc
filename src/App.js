@@ -29,6 +29,19 @@ function App() {
           <li>
             <button onClick={handleClick}>App button</button>
           </li>
+          <li>
+            <List>
+              <li>react list in react list webcomponent in react</li>
+            </List>
+          </li>
+          <li>
+            <list-el>
+              <li>react in webcomponent in react webcomponent in react</li>
+              <li>
+                <button onClick={handleClick}>deep app button</button>
+              </li>
+            </list-el>
+          </li>
         </list-el>
       </div>
     </div>
